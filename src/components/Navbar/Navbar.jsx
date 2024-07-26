@@ -1,12 +1,12 @@
-import { BiPhoneCall } from "react-icons/bi";
+import { BiPhoneCall, BiSolidSun } from "react-icons/bi";
 import { FaCaretDown } from "react-icons/fa";
 
 function Navbar() {
   return (
     <>
-      <nav className="bg-gray-800 text-white">
+      <nav className="bg-gradient-to-l from-violet-900 via-violet-800 to-violet-900 text-white fixed fixed-top-left-0 w-full border-b-[1px] border-primary/50">
         <div className="container">
-          <div>
+          <div className="flex items-center justify-between h-[70px] py-2">
             {/* Logo section */}
             <div className="text-2xl md:text-3xl text-white">
               <a href="#">
@@ -18,27 +18,38 @@ function Navbar() {
             </div>
 
             {/*Desktop menu section */}
-            <div>
-              <ul>
+            <div className="flex items-center gap-4 ">
+              <ul className="flex items-center gap-10">
                 <li className="group relative cursor-pointer">
-                  <a href="#" className="flex items-center gap-[2px] h-[72px]">
-                    Home <FaCaretDown className="group-hover:rotate-180 transition-all duration-200" />
+                  <a href="#" className="flex items-center gap-[2px] h-[70px]">
+                    Home{" "}
+                    <FaCaretDown className="group-hover:rotate-180 transition-all duration-200" />
                   </a>
+                  {/* dropdown section */}
+                  <div className="absolute -left-9 z-[99999] hidden w-[150px] bg-white shadow-md p-2 text-black rounded-md group-hover:block">
+                    <ul className="space-y-3">
+                      <li className="p-2 hover:bg-violet-200 rounded">Services</li>
+                      <li className="p-2 hover:bg-violet-200 rounded">About us</li>
+                      <li className="p-2 hover:bg-violet-200 rounded">Privacy policy</li>
+                    </ul>
+                  </div>
                 </li>
                 <li>About us</li>
                 <li>
+                  <div className="flex items-center gap-3">
+                    {/* icon here */}
                     <div>
-                        {/* icon here */}
-                    <div> 
-                       <BiPhoneCall className="text-2xl h-[40px] rounded-md text-white bg-primary hover:bg-primary/90"/> 
+                      <BiPhoneCall className="text-2xl h-[40px] w-[40px] rounded-md text-white bg-primary hover:bg-primary/90 p-2" />
                     </div>
-                        {/* mobile no */}
-                        <div>
-<p>Talk to</p>
-<p>+254799860103</p>
-                        </div>
+                    {/* mobile no */}
+                    <div>
+                      <p>Talk to us</p>
+                      <p>+254799860103</p>
                     </div>
+                  </div>
                 </li>
+                {/* light and darkmode switcher */}
+                {<BiSolidSun className="text-2xl" />}
               </ul>
             </div>
 
