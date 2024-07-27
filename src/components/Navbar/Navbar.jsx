@@ -1,6 +1,7 @@
 import { BiPhoneCall, BiSolidMoon, BiSolidSun } from "react-icons/bi";
 import { FaCaretDown } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import {  HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 function Navbar() {
     const [theme, setTheme] = useState(localStorage.getItem("theme")? localStorage.getItem("theme"):"light");
     const [showMenu, setShowMenu ]= useState(false);
@@ -12,7 +13,12 @@ function Navbar() {
         } else {
           element.classList.remove("dark");
         }
+        localStorage.setItem("theme", theme);
+
       }, [theme]);
+      const toggleMenu = () => {
+        setShowMenu(!showMenu);
+      };
       
   return (
     <>
@@ -30,6 +36,7 @@ function Navbar() {
             </div>
 
             {/*Desktop menu section */}
+            <div className="hidden md:block">
             <div className="flex items-center gap-4 ">
               <ul className="flex items-center gap-10">
                 <li className="group relative cursor-pointer">
@@ -66,8 +73,14 @@ function Navbar() {
                 {theme === "dark"?(<BiSolidSun className="text-2xl"onClick={()=>setTheme("light")}/>):(<BiSolidMoon className="text-2xl"onClick={()=>setTheme("dark")}/>)}
               </ul>
             </div>
+            </div>
+        
 
             {/*Mobile menu section */}
+            <div className="md:hidden flex items-center gap-4">
+            {theme === "dark"?(<BiSolidSun className="text-2xl"onClick={()=>setTheme("light")}/>):(<BiSolidMoon className="text-2xl"onClick={()=>setTheme("dark")}/>)}
+            {showMenu ? (<HiMenuAlt1 onClick={toggleMenu} className="cursor-pointer transition-all " size={30}/>):( <HiMenuAlt3 onClick={toggleMenu} className="cursor-pointer transition-all" size={30}/>)}
+            </div>
           </div>
         </div>
       </nav>
