@@ -1,7 +1,19 @@
-import { BiPhoneCall, BiSolidSun } from "react-icons/bi";
+import { BiPhoneCall, BiSolidMoon, BiSolidSun } from "react-icons/bi";
 import { FaCaretDown } from "react-icons/fa";
-
+import { useState, useEffect } from "react";
 function Navbar() {
+    const [theme, setTheme] = useState(localStorage.getItem("theme")? localStorage.getItem("theme"):"light");
+    const [showMenu, setShowMenu ]= useState(false);
+    const element =document.documentElement;
+
+    useEffect(() => {
+        if (theme === "dark") {
+          element.classList.add("dark");
+        } else {
+          element.classList.remove("dark");
+        }
+      }, [theme]);
+      
   return (
     <>
       <nav className="bg-gradient-to-l from-violet-900 via-violet-800 to-violet-900 text-white fixed fixed-top-left-0 w-full border-b-[1px] border-primary/50">
@@ -49,7 +61,9 @@ function Navbar() {
                   </div>
                 </li>
                 {/* light and darkmode switcher */}
-                {<BiSolidSun className="text-2xl" />}
+                {/* {<BiSolidSun className="text-2xl" />} */}
+
+                {theme === "dark"?(<BiSolidSun className="text-2xl"onClick={()=>setTheme("light")}/>):(<BiSolidMoon className="text-2xl"onClick={()=>setTheme("dark")}/>)}
               </ul>
             </div>
 
