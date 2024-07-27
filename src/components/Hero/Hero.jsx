@@ -33,6 +33,47 @@ const Hero = () => {
             </div>
 
             {/* form section */}
+            <div className="w-[90% md:w-[400px] mx-auto p-4 bg-white dark:bg-black text-black dark:text-white rounded-2xl shadow-md">
+                <div>
+                    <h1 className="text-lg text-center font-semibold">Quick Donation Form </h1>
+                    <div className="flex items-center justify-center gap-8 py-4">
+                        <button className="button-square"> $01</button>
+                        <button className="button-square"> $05</button>
+                        <button className="button-square" > $10</button>
+                        <button className="button-square"> $99</button>
+
+                    </div>
+                {/* input section here */}
+                <div className="space-y-4">
+                    <input type="number"
+                    name="amount"
+                    id="amount"
+                    placeholder="Amount"
+                    defaultValue={1}
+                    min={1}
+                    max={99}
+                    className="w-full border dark:border-gray-800 px-4 py-2 rounded-lg dark:bg-black"
+                    
+                    />
+                    <input type="text" 
+                    name="name"
+                    id="name"
+                    placeholder="Name"
+                    className="w-full border dark:border-gray-800 px-4 py-2 rounded-lg dark:bg-black"
+                    
+                    />
+                    <input type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                    className="w-full border dark:border-gray-800 px-4 py-2 rounded-lg dark:bg-black"
+                     />
+                     </div>
+
+
+                </div>
+                 </div>
+
           </div>
         </div>
       </div>
