@@ -2,6 +2,7 @@ import { BiPhoneCall, BiSolidMoon, BiSolidSun } from "react-icons/bi";
 import { FaCaretDown } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import {  HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
+import ResponsiveMenu from "./ResponsiveMenu";
 function Navbar() {
     const [theme, setTheme] = useState(localStorage.getItem("theme")? localStorage.getItem("theme"):"light");
     const [showMenu, setShowMenu ]= useState(false);
@@ -84,6 +85,9 @@ function Navbar() {
           </div>
         </div>
       </nav>
+      {/* mobile side menu components */}
+    <ResponsiveMenu showMenu={showMenu}/>
+
     </>
   );
 }
