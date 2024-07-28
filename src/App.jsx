@@ -1,3 +1,4 @@
+import Banner from "./components/Banner/Banner";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
 import OurVision from "./components/OurVision/OurVision";
@@ -11,6 +12,7 @@ export default function App() {
       <Hero/>
       <OverviewCounter/>
       <OurVision/>
+      <Banner/>
     </main>
     </>
   )
