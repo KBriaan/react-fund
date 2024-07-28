@@ -54,14 +54,14 @@ const Hero = () => {
     <div style={bgStyle}>
       <div className="min-h-[650px] md:min-h-[750px] bg-gradient-to-r from-black/80 to-primary/60 pt-3 pb-10 md:pt-48">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 text-white">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-7 text-white">
             {/* hero text section */}
-            <div className="flex flex-col items-center text-center gap-5 pt-12 lg:items-start lg:text-left lg:max-w-[450px]">
+            <div className="flex flex-col items-center text-center gap-4 pt-12 lg:items-start lg:text-left lg:max-w-[450px]">
               <motion.h1
                 variants={FadeUp(0.2)}
                 initial="initial"
                 animate="animate"
-                className="text-5xl lg:text-7xl font-bold"
+                className="text-4xl lg:text-7xl font-bold"
               >
                 Join Us Changing Lives
               </motion.h1>
