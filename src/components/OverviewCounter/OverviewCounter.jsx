@@ -64,7 +64,7 @@ const OverviewCounter = () => {
               start={0}
               end={160456}
               suffix="+"
-              duration={2.75}
+              duration={2.85}
             />
           </p>
           <p className="sm:text-md text-xs md:text-lg dark:text-white">Volunteers</p>
