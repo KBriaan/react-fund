@@ -38,6 +38,37 @@ const OverviewCounter = () => {
           </p>
           <p className="sm:text-md text-xs md:text-lg dark:text-white">Raised</p>
         </div>
+
+
+        <div className="flex flex-col items-center justify-center">
+          <p className="text-sm font-bold text-black/80 dark:text-white sm:text-lg md:text-3xl">
+            
+            <CountUp
+              enableScrollSpy={true}
+              scrollSpyOnce={true}
+              start={0}
+              end={234}
+              suffix=" k+"
+              duration={2.75}
+            />
+          </p>
+          <p className="sm:text-md text-xs md:text-lg dark:text-white">Donations</p>
+        </div>
+
+        <div className="flex flex-col items-center justify-center">
+          <p className="text-sm font-bold text-black/80 dark:text-white sm:text-lg md:text-3xl">
+            
+            <CountUp
+              enableScrollSpy={true}
+              scrollSpyOnce={true}
+              start={0}
+              end={160456}
+              suffix="+"
+              duration={2.75}
+            />
+          </p>
+          <p className="sm:text-md text-xs md:text-lg dark:text-white">Volunteers</p>
+        </div>
       </div>
     </motion.section>
   );
