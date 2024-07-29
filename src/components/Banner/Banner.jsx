@@ -25,8 +25,7 @@ const Banner = () => {
                 forgeting
               </li>
               <li className="font-medium">
-                Always give without remembering and always receive without
-                forgeting
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas dolore hic neque nostrum repellat corrupti quod quisquam, culpa in nulla!
               </li>
               <li className="font-medium">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
