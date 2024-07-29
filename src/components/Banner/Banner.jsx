@@ -21,8 +21,7 @@ const Banner = () => {
             </h1>
             <ul className="flex list-inside list-disc flex-col gap-2 md:gap-4">
               <li className="font-medium">
-                Always give without remembering and always receive without
-                forgeting
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse explicabo qui perferendis nulla, ipsa rem.
               </li>
               <li className="font-medium">
                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas dolore hic neque nostrum repellat corrupti quod quisquam, culpa in nulla!
