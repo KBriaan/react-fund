@@ -63,7 +63,7 @@ function Navbar() {
                     </div>
                     {/* mobile no */}
                     <div>
-                      <p>Talk to us</p>
+                      <p>Reach out through</p>
                       <p>+254799860103</p>
                     </div>
                   </div>
