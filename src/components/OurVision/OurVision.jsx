@@ -43,9 +43,7 @@ const OurVision = () => {
           whileInView="animate" className="mx-5 md:mx-8 px-6 py-10 space-y-4 shadow-lg border-t-8 border-yellow-500 dark:bg-slate-800">
           <h1 className="text-xl font-semibold">Our Mision</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugit id
-            sapiente quae, excepturi tempore vel tempora fugiat reprehenderit
-            qui.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores labore obcaecati animi fuga aliquid voluptatum eaque nihil beatae, dolor ab, cumque sint aut, voluptates omnis hic ducimus repudiandae iure sit magni esse ad recusandae a. Enim tenetur possimus dolor fuga!
           </p>
           <a
             href="#"
