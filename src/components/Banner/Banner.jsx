@@ -17,7 +17,7 @@ const Banner = () => {
           <div className="lg:max-w-[400px] space-y-6">
             <h1 className="text-2xl font-semibold md:text-4xl mb-4">
             
-              Help the Needy People
+              Lorem ipsum dolor sit amet.
             </h1>
             <ul className="flex list-inside list-disc flex-col gap-2 md:gap-4">
               <li className="font-medium">
