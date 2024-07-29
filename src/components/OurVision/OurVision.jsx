@@ -28,9 +28,7 @@ const OurVision = () => {
         >
           <h1 className="text-xl font-semibold">Our Vision</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut fugit id
-            sapiente quae, excepturi tempore vel tempora fugiat reprehenderit
-            qui.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, sed quae architecto ullam dolorem ad libero placeat saepe consectetur, ducimus porro sequi officia molestias qui, fuga inventore! Unde quia iste delectus! Suscipit, nemo. Laudantium blanditiis, numquam accusantium ut officiis dicta?
           </p>
           <a
             href="#"
