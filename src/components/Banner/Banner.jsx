@@ -27,8 +27,7 @@ const Banner = () => {
                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas dolore hic neque nostrum repellat corrupti quod quisquam, culpa in nulla!
               </li>
               <li className="font-medium">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
-                unde?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam quod earum aspernatur impedit aut esse non corporis vero qui quo.
               </li>
             </ul>
             <div className="btn-primary w-32 cursor-pointer">Get Started</div>
