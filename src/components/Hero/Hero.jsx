@@ -130,7 +130,7 @@ const Hero = () => {
                     className="btn-primary w-full rounded-full"
                     onClick={handleSubmit}
                   >
-                    Donate Now
+                    Make Donation now 
                   </button>
                 </div>
               </div>
