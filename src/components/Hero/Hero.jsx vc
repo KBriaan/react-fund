@@ -70,7 +70,7 @@ const Hero = () => {
                 animate="animate">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptatibus laudantium consequuntur neque vitae quo iusto ipsum
-                nemo illum facilis odit.
+                nemo illum 
               </motion.p>
 
               <div className="space-x-4">
