@@ -27,7 +27,7 @@ const Links = [
     name: "Privacy Policy",
   },
   {
-    name: "Services",
+    name: "Terms and Services",
   },
   {
     name: "About Us",
